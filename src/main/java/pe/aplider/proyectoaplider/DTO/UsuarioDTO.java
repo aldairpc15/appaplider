@@ -1,9 +1,5 @@
 package pe.aplider.proyectoaplider.DTO;
 
-import pe.aplider.proyectoaplider.entities.Servicio;
-
-import java.util.List;
-
 public class UsuarioDTO {
 
     private int id;
@@ -24,7 +20,6 @@ public class UsuarioDTO {
 
     private String estado;
 
-    private List<Servicio> servicios;
 
     public int getId() {
         return id;
@@ -32,14 +27,6 @@ public class UsuarioDTO {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getNombre() {
@@ -50,6 +37,14 @@ public class UsuarioDTO {
         this.nombre = nombre;
     }
 
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
     public String getCorreo() {
         return correo;
     }
@@ -58,20 +53,20 @@ public class UsuarioDTO {
         this.correo = correo;
     }
 
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
     public String getCargo() {
         return cargo;
     }
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getRuc() {
@@ -98,11 +93,4 @@ public class UsuarioDTO {
         this.estado = estado;
     }
 
-    public List<Servicio> getServicios() {
-        return servicios;
-    }
-
-    public void setServicios(List<Servicio> servicios) {
-        this.servicios = servicios;
-    }
 }

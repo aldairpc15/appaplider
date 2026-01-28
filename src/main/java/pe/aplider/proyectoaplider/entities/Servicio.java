@@ -1,5 +1,4 @@
 package pe.aplider.proyectoaplider.entities;
-
 import jakarta.persistence.*;
 
 @Entity
@@ -17,7 +16,7 @@ public class Servicio {
     private String mes_de_mantenimiento;
 
     @ManyToOne
-    @JoinColumn(name = "usuario_id", nullable = false)
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
     public Servicio() {

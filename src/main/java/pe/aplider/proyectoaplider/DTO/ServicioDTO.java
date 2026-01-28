@@ -10,7 +10,7 @@ public class ServicioDTO {
 
     private String mes_de_mantenimiento;
 
-    private int usuarioId;
+    private Usuario usuario;
 
     public int getId() {
         return id;
@@ -36,11 +36,11 @@ public class ServicioDTO {
         this.mes_de_mantenimiento = mes_de_mantenimiento;
     }
 
-    public int getUsuarioId() {
-        return usuarioId;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setUsuarioId(int usuarioId) {
-        this.usuarioId = usuarioId;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
